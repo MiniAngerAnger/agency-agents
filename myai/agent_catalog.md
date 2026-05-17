@@ -1,7 +1,7 @@
 # MYAI Command Deck Agent Catalog
 
 - Source: https://github.com/msitarzewski/agency-agents
-- Source commit: `783f6a72bfd7f3135700ac273c619d92821b419a`
+- Source commit: `fa8ad6929130729a1235a6e60ea78693af93cd06`
 - Agent count: `169`
 
 ## Rule

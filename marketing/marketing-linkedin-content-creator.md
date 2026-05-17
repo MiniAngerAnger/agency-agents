@@ -211,4 +211,3 @@ For B2B sellers:
 - This primes the algorithm AND builds real relationship before you ever need anything
 - DM only after establishing comment presence — reference the specific exchange, add one new thing
 - Never pitch in the DM until you've earned the right with genuine engagement
-

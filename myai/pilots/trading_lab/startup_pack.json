@@ -1,0 +1,693 @@
+{
+  "project_id": "TRADING_LAB",
+  "project_root": "/Users/moody/Downloads/MYAI/PROJECTS/TRADING_LAB",
+  "phase": "Execution/QA pilot",
+  "source_prompt_hash": "d17ac5f91ab3a86898a00558a3a2f443793b376023a088bc37bb9670b373bf1b",
+  "docs_read": [
+    "README.md"
+  ],
+  "catalog_name": "agency-agents-myai-command-deck-catalog",
+  "catalog_source_commit": "fa8ad6929130729a1235a6e60ea78693af93cd06",
+  "normalized_goal": "Test MYAI Agency role catalog selection against a real industry project without editing the project.",
+  "allowed_scope": [
+    "read project docs",
+    "select role profiles",
+    "bind selected roles to real CLI slot templates",
+    "produce startup mapping and QA notes"
+  ],
+  "forbidden_scope": [
+    "do not edit the target project",
+    "do not run global agency-agents install.sh",
+    "do not treat role profiles as real CLI workers",
+    "do not bypass MYAI Task Contract, QA, or closeout"
+  ],
+  "selected_role_count": 14,
+  "selected_roles": [
+    {
+      "id": "product-manager",
+      "name": "Product Manager",
+      "category": "product",
+      "source_path": "product/product-manager.md",
+      "description": "Holistic product leader who owns the full product lifecycle — from discovery and strategy through roadmap, stakeholder alignment, go-to-market, and outcome measurement. Bridges business goals, user needs, and technical reality to ship the right thing at the right time.",
+      "layer": "product-planning-specialist",
+      "allowed_phases": [
+        "Research",
+        "PRD",
+        "SPEC",
+        "TASKS"
+      ],
+      "recommended_cli_slots": [
+        "claude-cli",
+        "gemini-cli",
+        "codex-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 3619
+    },
+    {
+      "id": "ux-architect",
+      "name": "UX Architect",
+      "category": "design",
+      "source_path": "design/design-ux-architect.md",
+      "description": "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance",
+      "layer": "product-design-specialist",
+      "allowed_phases": [
+        "Research",
+        "PRD",
+        "SPEC",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "claude-cli",
+        "codex-cli",
+        "cursor-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 1809
+    },
+    {
+      "id": "software-architect",
+      "name": "Software Architect",
+      "category": "engineering",
+      "source_path": "engineering/engineering-software-architect.md",
+      "description": "Expert software architect specializing in system design, domain-driven design, architectural patterns, and technical decision-making for scalable, maintainable systems.",
+      "layer": "implementation-specialist",
+      "allowed_phases": [
+        "SPEC",
+        "TASKS",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "codex-cli",
+        "claude-cli",
+        "cursor-cli",
+        "kimi-code-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 476
+    },
+    {
+      "id": "codebase-onboarding-engineer",
+      "name": "Codebase Onboarding Engineer",
+      "category": "engineering",
+      "source_path": "engineering/engineering-codebase-onboarding-engineer.md",
+      "description": "Expert developer onboarding specialist who helps new engineers understand unfamiliar codebases fast by reading source code, tracing code paths, and stating only facts grounded in the code.",
+      "layer": "implementation-specialist",
+      "allowed_phases": [
+        "SPEC",
+        "TASKS",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "codex-cli",
+        "claude-cli",
+        "cursor-cli",
+        "kimi-code-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 1304
+    },
+    {
+      "id": "technical-writer",
+      "name": "Technical Writer",
+      "category": "engineering",
+      "source_path": "engineering/engineering-technical-writer.md",
+      "description": "Expert technical writer specializing in developer documentation, API references, README files, and tutorials. Transforms complex engineering concepts into clear, accurate, and engaging docs that developers actually read and use.",
+      "layer": "implementation-specialist",
+      "allowed_phases": [
+        "SPEC",
+        "TASKS",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "codex-cli",
+        "claude-cli",
+        "cursor-cli",
+        "kimi-code-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 1841
+    },
+    {
+      "id": "code-reviewer",
+      "name": "Code Reviewer",
+      "category": "engineering",
+      "source_path": "engineering/engineering-code-reviewer.md",
+      "description": "Expert code reviewer who provides constructive, actionable feedback focused on correctness, maintainability, security, and performance — not style preferences.",
+      "layer": "implementation-specialist",
+      "allowed_phases": [
+        "SPEC",
+        "TASKS",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "codex-cli",
+        "claude-cli",
+        "cursor-cli",
+        "kimi-code-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 418
+    },
+    {
+      "id": "evidence-collector",
+      "name": "Evidence Collector",
+      "category": "testing",
+      "source_path": "testing/testing-evidence-collector.md",
+      "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everything",
+      "layer": "qa-specialist",
+      "allowed_phases": [
+        "QA",
+        "Acceptance"
+      ],
+      "recommended_cli_slots": [
+        "cursor-cli",
+        "gemini-cli",
+        "qwen"
+      ],
+      "command_deck_status": "qa-role-profile",
+      "governance_note": "Can guide non-author QA, but real QA ownership stays with a named CLI slot.",
+      "body_word_count": 1103
+    },
+    {
+      "id": "reality-checker",
+      "name": "Reality Checker",
+      "category": "testing",
+      "source_path": "testing/testing-reality-checker.md",
+      "description": "Stops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelming proof for production readiness",
+      "layer": "qa-specialist",
+      "allowed_phases": [
+        "QA",
+        "Acceptance"
+      ],
+      "recommended_cli_slots": [
+        "cursor-cli",
+        "gemini-cli",
+        "qwen"
+      ],
+      "command_deck_status": "qa-role-profile",
+      "governance_note": "Can guide non-author QA, but real QA ownership stays with a named CLI slot.",
+      "body_word_count": 1223
+    },
+    {
+      "id": "test-results-analyzer",
+      "name": "Test Results Analyzer",
+      "category": "testing",
+      "source_path": "testing/testing-test-results-analyzer.md",
+      "description": "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities",
+      "layer": "qa-specialist",
+      "allowed_phases": [
+        "QA",
+        "Acceptance"
+      ],
+      "recommended_cli_slots": [
+        "cursor-cli",
+        "gemini-cli",
+        "qwen"
+      ],
+      "command_deck_status": "qa-role-profile",
+      "governance_note": "Can guide non-author QA, but real QA ownership stays with a named CLI slot.",
+      "body_word_count": 1485
+    },
+    {
+      "id": "legal-compliance-checker",
+      "name": "Legal Compliance Checker",
+      "category": "support",
+      "source_path": "support/support-legal-compliance-checker.md",
+      "description": "Expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with relevant laws, regulations, and industry standards across multiple jurisdictions.",
+      "layer": "operations-support-specialist",
+      "allowed_phases": [
+        "Research",
+        "PRD",
+        "SPEC",
+        "Acceptance"
+      ],
+      "recommended_cli_slots": [
+        "qwen",
+        "cursor-cli",
+        "gemini-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 2594
+    },
+    {
+      "id": "security-engineer",
+      "name": "Security Engineer",
+      "category": "engineering",
+      "source_path": "engineering/engineering-security-engineer.md",
+      "description": "Expert application security engineer specializing in threat modeling, vulnerability assessment, secure code review, security architecture design, and incident response for modern web, API, and cloud-native applications.",
+      "layer": "implementation-specialist",
+      "allowed_phases": [
+        "SPEC",
+        "TASKS",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "codex-cli",
+        "claude-cli",
+        "cursor-cli",
+        "kimi-code-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 2223
+    },
+    {
+      "id": "frontend-developer",
+      "name": "Frontend Developer",
+      "category": "engineering",
+      "source_path": "engineering/engineering-frontend-developer.md",
+      "description": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization",
+      "layer": "implementation-specialist",
+      "allowed_phases": [
+        "SPEC",
+        "TASKS",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "codex-cli",
+        "claude-cli",
+        "cursor-cli",
+        "kimi-code-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 1116
+    },
+    {
+      "id": "ui-designer",
+      "name": "UI Designer",
+      "category": "design",
+      "source_path": "design/design-ui-designer.md",
+      "description": "Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation. Creates beautiful, consistent, accessible user interfaces that enhance UX and reflect brand identity",
+      "layer": "product-design-specialist",
+      "allowed_phases": [
+        "Research",
+        "PRD",
+        "SPEC",
+        "Execution",
+        "QA"
+      ],
+      "recommended_cli_slots": [
+        "claude-cli",
+        "codex-cli",
+        "cursor-cli"
+      ],
+      "command_deck_status": "available-as-project-role",
+      "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
+      "body_word_count": 1620
+    },
+    {
+      "id": "accessibility-auditor",
+      "name": "Accessibility Auditor",
+      "category": "testing",
+      "source_path": "testing/testing-accessibility-auditor.md",
+      "description": "Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers — if it's not tested with a screen reader, it's not accessible.",
+      "layer": "qa-specialist",
+      "allowed_phases": [
+        "QA",
+        "Acceptance"
+      ],
+      "recommended_cli_slots": [
+        "cursor-cli",
+        "gemini-cli",
+        "qwen"
+      ],
+      "command_deck_status": "qa-role-profile",
+      "governance_note": "Can guide non-author QA, but real QA ownership stays with a named CLI slot.",
+      "body_word_count": 2099
+    }
+  ],
+  "missing_role_ids": [],
+  "role_to_slot_mapping": [
+    {
+      "slot_id": "ClaudeCLI-1-01",
+      "owner": "claude-cli",
+      "cli": "claude-cli",
+      "role_profile_id": "product-manager",
+      "role_profile_name": "Product Manager",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "ClaudeCLI-1-02",
+      "owner": "claude-cli",
+      "cli": "claude-cli",
+      "role_profile_id": "ux-architect",
+      "role_profile_name": "UX Architect",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CodexCLI-1-03",
+      "owner": "codex-cli",
+      "cli": "codex-cli",
+      "role_profile_id": "software-architect",
+      "role_profile_name": "Software Architect",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CodexCLI-1-04",
+      "owner": "codex-cli",
+      "cli": "codex-cli",
+      "role_profile_id": "codebase-onboarding-engineer",
+      "role_profile_name": "Codebase Onboarding Engineer",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CodexCLI-1-05",
+      "owner": "codex-cli",
+      "cli": "codex-cli",
+      "role_profile_id": "technical-writer",
+      "role_profile_name": "Technical Writer",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CodexCLI-1-06",
+      "owner": "codex-cli",
+      "cli": "codex-cli",
+      "role_profile_id": "code-reviewer",
+      "role_profile_name": "Code Reviewer",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CursorQA-1-07",
+      "owner": "cursor-cli",
+      "cli": "cursor-cli",
+      "role_profile_id": "evidence-collector",
+      "role_profile_name": "Evidence Collector",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CursorQA-1-08",
+      "owner": "cursor-cli",
+      "cli": "cursor-cli",
+      "role_profile_id": "reality-checker",
+      "role_profile_name": "Reality Checker",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CursorQA-1-09",
+      "owner": "cursor-cli",
+      "cli": "cursor-cli",
+      "role_profile_id": "test-results-analyzer",
+      "role_profile_name": "Test Results Analyzer",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "QwenQA-1-10",
+      "owner": "qwen",
+      "cli": "qwen",
+      "role_profile_id": "legal-compliance-checker",
+      "role_profile_name": "Legal Compliance Checker",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CodexCLI-1-11",
+      "owner": "codex-cli",
+      "cli": "codex-cli",
+      "role_profile_id": "security-engineer",
+      "role_profile_name": "Security Engineer",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CodexCLI-1-12",
+      "owner": "codex-cli",
+      "cli": "codex-cli",
+      "role_profile_id": "frontend-developer",
+      "role_profile_name": "Frontend Developer",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "ClaudeCLI-1-13",
+      "owner": "claude-cli",
+      "cli": "claude-cli",
+      "role_profile_id": "ui-designer",
+      "role_profile_name": "UI Designer",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    },
+    {
+      "slot_id": "CursorQA-1-14",
+      "owner": "cursor-cli",
+      "cli": "cursor-cli",
+      "role_profile_id": "accessibility-auditor",
+      "role_profile_name": "Accessibility Auditor",
+      "task_id": "PROJECT-STARTUP-ROLE-MAPPING",
+      "worktree": "<project worktree required before execution>",
+      "branch": "<project branch required before execution>",
+      "files_or_modules": "project docs, task contract, and scoped implementation files only",
+      "reviewer": "non-author CLI slot required",
+      "acceptance_commands": [
+        "project-specific tests from docs/06_ACCEPTANCE.md",
+        "git diff --check"
+      ],
+      "expected_duration": "30-90m depending on project phase",
+      "first_check_after": "10m",
+      "max_silent_grace": "30m",
+      "stop_conditions": [
+        "scope change",
+        "missing credentials or provider blocker",
+        "protected rule file edit required",
+        "copyright/IP/legal uncertainty needs MOODY decision"
+      ]
+    }
+  ],
+  "qa_owner": "GeminiQA-1 or CursorQA-1",
+  "verification_commands": [
+    "python3 scripts/myai_project_startup.py --catalog myai/agent_catalog.json --project-root <project> --project-id <id> --out-json <out.json> --out-md <out.md>",
+    "python3 -m json.tool <out.json>"
+  ]
+}

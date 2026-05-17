@@ -7,7 +7,7 @@
 # is missing or stale.
 #
 # Usage:
-#   ./scripts/install.sh [--tool <name>] [--interactive] [--no-interactive] [--parallel] [--jobs N] [--help]
+#   ./scripts/install.sh [--tool <name>] [--interactive] [--no-interactive] [--parallel] [--jobs N] [--dry-run] [--allow-global-install] [--help]
 #
 # Tools:
 #   claude-code  -- Copy agents to ~/.claude/agents/
@@ -28,6 +28,9 @@
 #   --no-interactive  Skip interactive selector, install all detected tools
 #   --parallel        Run install for each selected tool in parallel (output order may vary)
 #   --jobs N          Max parallel jobs when using --parallel (default: nproc or 4)
+#   --dry-run         Print selected tools and safety classification without writing files
+#   --allow-global-install
+#                     Permit user-wide installs into HOME tool directories
 #   --help            Show this help
 #
 # Platform support:
@@ -102,6 +105,7 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 INTEGRATIONS="$REPO_ROOT/integrations"
 
 ALL_TOOLS=(claude-code copilot antigravity gemini-cli opencode openclaw cursor aider windsurf qwen kimi)
+GLOBAL_INSTALL_TOOLS=(claude-code copilot antigravity gemini-cli openclaw kimi)
 
 # Standard agent category directories (keep sorted, sync with convert.sh / lint-agents.sh)
 AGENT_DIRS=(
@@ -165,6 +169,24 @@ is_detected() {
     kimi)        detect_kimi        ;;
     *)           return 1 ;;
   esac
+}
+
+requires_global_install() {
+  local candidate="$1" t
+  for t in "${GLOBAL_INSTALL_TOOLS[@]}"; do
+    [[ "$candidate" == "$t" ]] && return 0
+  done
+  return 1
+}
+
+global_install_blocked_tools() {
+  local blocked=() t
+  for t in "$@"; do
+    if requires_global_install "$t"; then
+      blocked+=("$t")
+    fi
+  done
+  printf '%s\n' "${blocked[@]:-}"
 }
 
 # Fixed-width labels: name (14) + detail (24) = 38 visible chars
@@ -541,6 +563,8 @@ main() {
   local tool="all"
   local interactive_mode="auto"
   local use_parallel=false
+  local dry_run="${AGENCY_DRY_RUN:-false}"
+  local allow_global_install="${AGENCY_ALLOW_GLOBAL_INSTALL:-false}"
   local parallel_jobs
   parallel_jobs="$(parallel_jobs_default)"
 
@@ -551,6 +575,8 @@ main() {
       --no-interactive)  interactive_mode="no"; shift ;;
       --parallel)        use_parallel=true; shift ;;
       --jobs)            parallel_jobs="${2:?'--jobs requires a value'}"; shift 2 ;;
+      --dry-run)         dry_run=true; shift ;;
+      --allow-global-install) allow_global_install=true; shift ;;
       --help|-h)         usage ;;
       *)                 err "Unknown option: $1"; usage ;;
     esac
@@ -607,6 +633,28 @@ main() {
     exit 0
   fi
 
+  local blocked_tools
+  blocked_tools="$(global_install_blocked_tools "${SELECTED_TOOLS[@]}")"
+  if [[ "$dry_run" == "true" ]]; then
+    header "The Agency -- Dry run"
+    printf "  Repo:       %s\n" "$REPO_ROOT"
+    printf "  Selected:   %s\n" "${SELECTED_TOOLS[*]}"
+    if [[ -n "$blocked_tools" ]]; then
+      printf "  Global:     %s\n" "$(printf '%s' "$blocked_tools" | tr '\n' ' ')"
+    else
+      printf "  Global:     none\n"
+    fi
+    printf "  Writes:     none\n"
+    return 0
+  fi
+
+  if [[ -n "$blocked_tools" && "$allow_global_install" != "true" ]]; then
+    err "Refusing user-wide install for: $(printf '%s' "$blocked_tools" | tr '\n' ' ')"
+    err "Rerun with --allow-global-install only after reviewing the target HOME directories."
+    err "Use --dry-run to inspect selected tools without writing files."
+    exit 2
+  fi
+
   # When parent runs install.sh --parallel, it spawns workers with AGENCY_INSTALL_WORKER=1
   # so each worker only runs install_tool(s) and skips header/done box (avoids duplicate output).
   if [[ -n "${AGENCY_INSTALL_WORKER:-}" ]]; then
@@ -633,6 +681,9 @@ main() {
     install_out_dir="$(mktemp -d)"
     export AGENCY_INSTALL_OUT_DIR="$install_out_dir"
     export AGENCY_INSTALL_SCRIPT="$SCRIPT_DIR/install.sh"
+    if [[ "$allow_global_install" == "true" ]]; then
+      export AGENCY_ALLOW_GLOBAL_INSTALL=true
+    fi
     printf '%s\n' "${SELECTED_TOOLS[@]}" | xargs -P "$parallel_jobs" -I {} sh -c 'AGENCY_INSTALL_WORKER=1 "$AGENCY_INSTALL_SCRIPT" --tool "{}" --no-interactive > "$AGENCY_INSTALL_OUT_DIR/{}" 2>&1'
     for t in "${SELECTED_TOOLS[@]}"; do
       [[ -f "$install_out_dir/$t" ]] && cat "$install_out_dir/$t"

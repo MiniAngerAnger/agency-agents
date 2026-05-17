@@ -1,0 +1,49 @@
+{
+  "errors": {},
+  "failed": 0,
+  "max_selected_roles": 40,
+  "passed": 4,
+  "pilot_count": 4,
+  "summaries": [
+    {
+      "context_guard": "passed",
+      "docs_read": 1,
+      "missing_role_ids": 0,
+      "path": "myai/pilots/freelance_income_toolkit/startup_pack.json",
+      "project_id": "FREELANCE_INCOME_TOOLKIT",
+      "reference_only_selected": 0,
+      "role_to_slot_count": 17,
+      "selected_role_count": 17
+    },
+    {
+      "context_guard": "passed",
+      "docs_read": 6,
+      "missing_role_ids": 0,
+      "path": "myai/pilots/music_film_director/startup_pack.json",
+      "project_id": "MUSIC_FILM_DIRECTOR",
+      "reference_only_selected": 0,
+      "role_to_slot_count": 27,
+      "selected_role_count": 27
+    },
+    {
+      "context_guard": "passed",
+      "docs_read": 6,
+      "missing_role_ids": 0,
+      "path": "myai/pilots/pdlm/startup_pack.json",
+      "project_id": "PDLM",
+      "reference_only_selected": 0,
+      "role_to_slot_count": 24,
+      "selected_role_count": 24
+    },
+    {
+      "context_guard": "passed",
+      "docs_read": 1,
+      "missing_role_ids": 0,
+      "path": "myai/pilots/trading_lab/startup_pack.json",
+      "project_id": "TRADING_LAB",
+      "reference_only_selected": 0,
+      "role_to_slot_count": 14,
+      "selected_role_count": 14
+    }
+  ]
+}

@@ -1,3 +1,28 @@
+---
+name: Phase 5 Playbook — Launch & Growth
+description: "Duration: 2-4 weeks (T-7 through T+14) | Agents: 12 | Gate Keepers: Studio Producer + Analytics Reporter"
+color: cyan
+---
+
+## MYAI Control Boundary
+
+In MYAI, this document is a strategy reference only. Translate any `Agents Orchestrator`, `NEXUS`, or pipeline-controller language into `Codex App controller -> MYAI Task Contract -> real CLI slot -> verification -> non-author QA`. Do not use it to replace Codex App, create pseudo-workers, or bypass Command Deck gates.
+
+
+## Critical Rules
+
+- Keep scope explicit.
+- Require evidence for completion claims.
+- Escalate blockers instead of inventing authority.
+
+## Core Mission
+
+Preserve the document intent while producing scoped, evidence-backed guidance for the current project phase.
+
+## Identity
+
+This file defines a bounded Agency role, strategy reference, or runbook. Use it as guidance through a real tool slot, not as an autonomous worker identity.
+
 # 🚀 Phase 5 Playbook — Launch & Growth
 
 > **Duration**: 2-4 weeks (T-7 through T+14) | **Agents**: 12 | **Gate Keepers**: Studio Producer + Analytics Reporter

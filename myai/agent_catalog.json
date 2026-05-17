@@ -2,7 +2,7 @@
   "catalog_name": "agency-agents-myai-command-deck-catalog",
   "catalog_version": "2026-05-17",
   "source_repo": "https://github.com/msitarzewski/agency-agents",
-  "source_commit": "783f6a72bfd7f3135700ac273c619d92821b419a",
+  "source_commit": "fa8ad6929130729a1235a6e60ea78693af93cd06",
   "myai_integration_rule": "Agency agents are project role profiles. Real execution must route through MYAI Command Deck Task Contracts and named CLI slots.",
   "agent_count": 169,
   "category_counts": {
@@ -816,7 +816,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 770
+      "body_word_count": 787
     },
     {
       "id": "software-architect",
@@ -1243,7 +1243,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 1296
+      "body_word_count": 1319
     },
     {
       "id": "app-store-optimizer",
@@ -1427,7 +1427,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 333
+      "body_word_count": 398
     },
     {
       "id": "cross-border-e-commerce-specialist",
@@ -1496,7 +1496,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 338
+      "body_word_count": 403
     },
     {
       "id": "instagram-curator",
@@ -1726,7 +1726,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 865
+      "body_word_count": 930
     },
     {
       "id": "tiktok-strategist",
@@ -1910,7 +1910,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 648
+      "body_word_count": 713
     },
     {
       "id": "ad-creative-strategist",
@@ -1933,7 +1933,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 630
+      "body_word_count": 695
     },
     {
       "id": "paid-social-strategist",
@@ -1956,7 +1956,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 645
+      "body_word_count": 710
     },
     {
       "id": "ppc-campaign-strategist",
@@ -1979,7 +1979,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 596
+      "body_word_count": 661
     },
     {
       "id": "programmatic-display-buyer",
@@ -2002,7 +2002,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 620
+      "body_word_count": 685
     },
     {
       "id": "search-query-analyst",
@@ -2025,7 +2025,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 613
+      "body_word_count": 678
     },
     {
       "id": "tracking-measurement-specialist",
@@ -2048,7 +2048,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 618
+      "body_word_count": 683
     },
     {
       "id": "behavioral-nudge-engine",
@@ -2092,7 +2092,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 847
+      "body_word_count": 912
     },
     {
       "id": "product-manager",
@@ -2136,7 +2136,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 1102
+      "body_word_count": 1167
     },
     {
       "id": "trend-researcher",
@@ -2158,7 +2158,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 1187
+      "body_word_count": 1252
     },
     {
       "id": "experiment-tracker",
@@ -2284,7 +2284,7 @@
       ],
       "command_deck_status": "planning-support-role",
       "governance_note": "Can shape task cards and acceptance notes, but cannot dispatch real CLI slots.",
-      "body_word_count": 686
+      "body_word_count": 703
     },
     {
       "id": "account-strategist",
@@ -2350,7 +2350,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 1993
+      "body_word_count": 2058
     },
     {
       "id": "discovery-coach",
@@ -2372,7 +2372,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 2182
+      "body_word_count": 2219
     },
     {
       "id": "sales-engineer",
@@ -2394,7 +2394,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 2007
+      "body_word_count": 2072
     },
     {
       "id": "outbound-strategist",
@@ -2416,7 +2416,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 1618
+      "body_word_count": 1655
     },
     {
       "id": "pipeline-analyst",
@@ -2504,7 +2504,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 441
+      "body_word_count": 506
     },
     {
       "id": "visionos-spatial-engineer",
@@ -2526,7 +2526,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 341
+      "body_word_count": 406
     },
     {
       "id": "xr-cockpit-interaction-specialist",
@@ -2548,7 +2548,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 201
+      "body_word_count": 221
     },
     {
       "id": "xr-immersive-developer",
@@ -2570,7 +2570,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 214
+      "body_word_count": 234
     },
     {
       "id": "xr-interface-architect",
@@ -2592,7 +2592,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 192
+      "body_word_count": 212
     },
     {
       "id": "accounts-payable-agent",
@@ -2664,7 +2664,7 @@
       ],
       "command_deck_status": "reference-only",
       "governance_note": "reference-only: cannot replace Codex App or create internal pseudo-team members",
-      "body_word_count": 1947
+      "body_word_count": 2000
     },
     {
       "id": "automation-governance-architect",
@@ -2688,7 +2688,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 777
+      "body_word_count": 825
     },
     {
       "id": "blockchain-security-auditor",
@@ -3384,7 +3384,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 1472
+      "body_word_count": 1495
     },
     {
       "id": "korean-business-navigator",
@@ -3480,7 +3480,7 @@
       ],
       "command_deck_status": "available-as-project-role",
       "governance_note": "Use through a MYAI Task Contract; never as an autonomous executor identity.",
-      "body_word_count": 1306
+      "body_word_count": 1328
     },
     {
       "id": "workflow-architect",
@@ -3768,7 +3768,7 @@
       ],
       "command_deck_status": "qa-role-profile",
       "governance_note": "Can guide non-author QA, but real QA ownership stays with a named CLI slot.",
-      "body_word_count": 1066
+      "body_word_count": 1103
     },
     {
       "id": "performance-benchmarker",
@@ -3808,7 +3808,7 @@
       ],
       "command_deck_status": "qa-role-profile",
       "governance_note": "Can guide non-author QA, but real QA ownership stays with a named CLI slot.",
-      "body_word_count": 1203
+      "body_word_count": 1223
     },
     {
       "id": "test-results-analyzer",

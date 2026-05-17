@@ -80,7 +80,7 @@ lint_file() {
 
   # 2. Check required frontmatter fields
   for field in "${REQUIRED_FRONTMATTER[@]}"; do
-    if ! echo "$frontmatter" | grep -qE "^${field}:"; then
+    if ! grep -qE "^${field}:" <<< "$frontmatter"; then
       echo "ERROR $file: missing frontmatter field '${field}'"
       errors=$((errors + 1))
     fi
@@ -91,7 +91,7 @@ lint_file() {
   body=$(awk 'BEGIN{n=0} /^---$/{n++; next} n>=2{print}' "$file")
 
   for section in "${RECOMMENDED_SECTIONS[@]}"; do
-    if ! echo "$body" | grep -qi "$section"; then
+    if ! grep -qi "$section" <<< "$body"; then
       echo "WARN  $file: missing recommended section '${section}'"
       warnings=$((warnings + 1))
     fi
@@ -99,7 +99,7 @@ lint_file() {
 
   # 4. Check file has meaningful content (awk strips wc's leading whitespace on macOS/BSD)
   local word_count
-  word_count=$(echo "$body" | wc -w | awk '{print $1}')
+  word_count=$(wc -w <<< "$body" | awk '{print $1}')
   if [[ "${word_count:-0}" -lt 50 ]]; then
     echo "WARN  $file: body seems very short (< 50 words)"
     warnings=$((warnings + 1))

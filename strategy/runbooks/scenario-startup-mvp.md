@@ -1,3 +1,24 @@
+---
+name: Runbook: Startup MVP Build
+description: "Mode: NEXUS-Sprint | Duration: 4-6 weeks | Agents: 18-22"
+color: cyan
+---
+
+## MYAI Control Boundary
+
+In MYAI, this document is a strategy reference only. Translate any `Agents Orchestrator`, `NEXUS`, or pipeline-controller language into `Codex App controller -> MYAI Task Contract -> real CLI slot -> verification -> non-author QA`. Do not use it to replace Codex App, create pseudo-workers, or bypass Command Deck gates.
+
+
+## Critical Rules
+
+- Keep scope explicit.
+- Require evidence for completion claims.
+- Escalate blockers instead of inventing authority.
+
+## Core Mission
+
+Preserve the document intent while producing scoped, evidence-backed guidance for the current project phase.
+
 # 🚀 Runbook: Startup MVP Build
 
 > **Mode**: NEXUS-Sprint | **Duration**: 4-6 weeks | **Agents**: 18-22
