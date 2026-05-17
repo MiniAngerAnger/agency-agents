@@ -1,0 +1,73 @@
+{
+  "project_id": "MUSIC_FILM_DIRECTOR",
+  "date": "2026-05-17",
+  "command_deck_startup": {
+    "catalog_name": "agency-agents-myai-command-deck-catalog",
+    "catalog_source_commit": "783f6a72bfd7f3135700ac273c619d92821b419a",
+    "docs_read": 6,
+    "selected_role_count": 27,
+    "missing_role_ids": 0,
+    "role_status_counts": {
+      "available-as-project-role": 23,
+      "qa-role-profile": 4
+    },
+    "qa_owner": "GeminiQA-1 or CursorQA-1"
+  },
+  "validation": {
+    "command_deck_eval": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "pytest": {
+      "passed": 85,
+      "failed": 0,
+      "skipped": 0
+    },
+    "ruff": "passed",
+    "mypy": {
+      "status": "passed",
+      "source_files": 57
+    }
+  },
+  "complete_package_smoke": {
+    "output_dir": "/tmp/command-deck-mfd-pilot",
+    "size": "332K",
+    "file_count": 18,
+    "keyframe_count": 8,
+    "video": {
+      "codec": "h264",
+      "width": 180,
+      "height": 320,
+      "frame_rate": "12/1",
+      "duration_seconds": 8.0,
+      "frames": 96,
+      "audio_streams": 0
+    },
+    "safety": {
+      "publish_ready": false,
+      "has_audio": false,
+      "contains_full_lyrics": false,
+      "contains_audio_file": false,
+      "preview_has_script": false,
+      "project_has_users_path": false
+    }
+  },
+  "real_cli_qa": {
+    "slot": "GeminiQA-1",
+    "role_profiles": [
+      "evidence-collector",
+      "reality-checker",
+      "test-results-analyzer",
+      "code-reviewer",
+      "legal-compliance-checker"
+    ],
+    "verdict": "建议上线",
+    "completion_rate": "100%",
+    "p0": 0,
+    "p1": 0,
+    "p2": 0,
+    "command_deck_pilot_real": true,
+    "unfinished_items": []
+  }
+}

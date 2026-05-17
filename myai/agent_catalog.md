@@ -1,0 +1,198 @@
+# MYAI Command Deck Agent Catalog
+
+- Source: https://github.com/msitarzewski/agency-agents
+- Source commit: `783f6a72bfd7f3135700ac273c619d92821b419a`
+- Agent count: `169`
+
+## Rule
+
+Agency agents are project role profiles. Real execution must route through MYAI Command Deck Task Contracts and named CLI slots.
+
+## Category Counts
+
+- `academic`: 5
+- `design`: 8
+- `engineering`: 29
+- `finance`: 5
+- `game-development`: 5
+- `marketing`: 30
+- `paid-media`: 7
+- `product`: 5
+- `project-management`: 6
+- `sales`: 8
+- `spatial-computing`: 6
+- `specialized`: 41
+- `support`: 6
+- `testing`: 8
+
+## Agents
+
+- `anthropologist` · Anthropologist · `academic` · `available-as-project-role` · phases: Research, PRD, SPEC
+- `geographer` · Geographer · `academic` · `available-as-project-role` · phases: Research, PRD, SPEC
+- `historian` · Historian · `academic` · `available-as-project-role` · phases: Research, PRD, SPEC
+- `narratologist` · Narratologist · `academic` · `available-as-project-role` · phases: Research, PRD, SPEC
+- `psychologist` · Psychologist · `academic` · `available-as-project-role` · phases: Research, PRD, SPEC
+- `brand-guardian` · Brand Guardian · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `image-prompt-engineer` · Image Prompt Engineer · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `inclusive-visuals-specialist` · Inclusive Visuals Specialist · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `ui-designer` · UI Designer · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `ux-architect` · UX Architect · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `ux-researcher` · UX Researcher · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `visual-storyteller` · Visual Storyteller · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `whimsy-injector` · Whimsy Injector · `design` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `ai-data-remediation-engineer` · AI Data Remediation Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `ai-engineer` · AI Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `autonomous-optimization-architect` · Autonomous Optimization Architect · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `backend-architect` · Backend Architect · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `cms-developer` · CMS Developer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `code-reviewer` · Code Reviewer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `codebase-onboarding-engineer` · Codebase Onboarding Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `data-engineer` · Data Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `database-optimizer` · Database Optimizer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `devops-automator` · DevOps Automator · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `email-intelligence-engineer` · Email Intelligence Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `embedded-firmware-engineer` · Embedded Firmware Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `feishu-integration-developer` · Feishu Integration Developer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `filament-optimization-specialist` · Filament Optimization Specialist · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `frontend-developer` · Frontend Developer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `git-workflow-master` · Git Workflow Master · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `incident-response-commander` · Incident Response Commander · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `minimal-change-engineer` · Minimal Change Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `mobile-app-builder` · Mobile App Builder · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `rapid-prototyper` · Rapid Prototyper · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `security-engineer` · Security Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `senior-developer` · Senior Developer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `software-architect` · Software Architect · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `solidity-smart-contract-engineer` · Solidity Smart Contract Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `sre-site-reliability-engineer` · SRE (Site Reliability Engineer) · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `technical-writer` · Technical Writer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `threat-detection-engineer` · Threat Detection Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `voice-ai-integration-engineer` · Voice AI Integration Engineer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `wechat-mini-program-developer` · WeChat Mini Program Developer · `engineering` · `available-as-project-role` · phases: SPEC, TASKS, Execution, QA
+- `bookkeeper-controller` · Bookkeeper & Controller · `finance` · `available-as-project-role` · phases: Research, PRD, SPEC, QA
+- `financial-analyst` · Financial Analyst · `finance` · `available-as-project-role` · phases: Research, PRD, SPEC, QA
+- `fp-a-analyst` · FP&A Analyst · `finance` · `available-as-project-role` · phases: Research, PRD, SPEC, QA
+- `investment-researcher` · Investment Researcher · `finance` · `available-as-project-role` · phases: Research, PRD, SPEC, QA
+- `tax-strategist` · Tax Strategist · `finance` · `available-as-project-role` · phases: Research, PRD, SPEC, QA
+- `game-audio-engineer` · Game Audio Engineer · `game-development` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `game-designer` · Game Designer · `game-development` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `level-designer` · Level Designer · `game-development` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `narrative-designer` · Narrative Designer · `game-development` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `technical-artist` · Technical Artist · `game-development` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `agentic-search-optimizer` · Agentic Search Optimizer · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `ai-citation-strategist` · AI Citation Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `app-store-optimizer` · App Store Optimizer · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `baidu-seo-specialist` · Baidu SEO Specialist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `bilibili-content-strategist` · Bilibili Content Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `book-co-author` · Book Co-Author · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `carousel-growth-engine` · Carousel Growth Engine · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `china-e-commerce-operator` · China E-Commerce Operator · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `china-market-localization-strategist` · China Market Localization Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `content-creator` · Content Creator · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `cross-border-e-commerce-specialist` · Cross-Border E-Commerce Specialist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `douyin-strategist` · Douyin Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `growth-hacker` · Growth Hacker · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `instagram-curator` · Instagram Curator · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `kuaishou-strategist` · Kuaishou Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `linkedin-content-creator` · LinkedIn Content Creator · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `livestream-commerce-coach` · Livestream Commerce Coach · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `podcast-strategist` · Podcast Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `private-domain-operator` · Private Domain Operator · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `reddit-community-builder` · Reddit Community Builder · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `seo-specialist` · SEO Specialist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `short-video-editing-coach` · Short-Video Editing Coach · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `social-media-strategist` · Social Media Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `tiktok-strategist` · TikTok Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `twitter-engager` · Twitter Engager · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `video-optimization-specialist` · Video Optimization Specialist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `wechat-official-account-manager` · WeChat Official Account Manager · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `weibo-strategist` · Weibo Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `xiaohongshu-specialist` · Xiaohongshu Specialist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `zhihu-strategist` · Zhihu Strategist · `marketing` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `paid-media-auditor` · Paid Media Auditor · `paid-media` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `ad-creative-strategist` · Ad Creative Strategist · `paid-media` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `paid-social-strategist` · Paid Social Strategist · `paid-media` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `ppc-campaign-strategist` · PPC Campaign Strategist · `paid-media` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `programmatic-display-buyer` · Programmatic & Display Buyer · `paid-media` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `search-query-analyst` · Search Query Analyst · `paid-media` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `tracking-measurement-specialist` · Tracking & Measurement Specialist · `paid-media` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `behavioral-nudge-engine` · Behavioral Nudge Engine · `product` · `available-as-project-role` · phases: Research, PRD, SPEC, TASKS
+- `feedback-synthesizer` · Feedback Synthesizer · `product` · `available-as-project-role` · phases: Research, PRD, SPEC, TASKS
+- `product-manager` · Product Manager · `product` · `available-as-project-role` · phases: Research, PRD, SPEC, TASKS
+- `sprint-prioritizer` · Sprint Prioritizer · `product` · `available-as-project-role` · phases: Research, PRD, SPEC, TASKS
+- `trend-researcher` · Trend Researcher · `product` · `available-as-project-role` · phases: Research, PRD, SPEC, TASKS
+- `experiment-tracker` · Experiment Tracker · `project-management` · `planning-support-role` · phases: PRD, SPEC, TASKS, Acceptance
+- `jira-workflow-steward` · Jira Workflow Steward · `project-management` · `planning-support-role` · phases: PRD, SPEC, TASKS, Acceptance
+- `project-shepherd` · Project Shepherd · `project-management` · `reference-only` · phases: PRD, SPEC, TASKS, Acceptance
+- `studio-operations` · Studio Operations · `project-management` · `reference-only` · phases: PRD, SPEC, TASKS, Acceptance
+- `studio-producer` · Studio Producer · `project-management` · `reference-only` · phases: PRD, SPEC, TASKS, Acceptance
+- `senior-project-manager` · Senior Project Manager · `project-management` · `planning-support-role` · phases: PRD, SPEC, TASKS, Acceptance
+- `account-strategist` · Account Strategist · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `sales-coach` · Sales Coach · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `deal-strategist` · Deal Strategist · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `discovery-coach` · Discovery Coach · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `sales-engineer` · Sales Engineer · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `outbound-strategist` · Outbound Strategist · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `pipeline-analyst` · Pipeline Analyst · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `proposal-strategist` · Proposal Strategist · `sales` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution
+- `macos-spatial-metal-engineer` · macOS Spatial/Metal Engineer · `spatial-computing` · `available-as-project-role` · phases: Research, SPEC, Execution, QA
+- `terminal-integration-specialist` · Terminal Integration Specialist · `spatial-computing` · `available-as-project-role` · phases: Research, SPEC, Execution, QA
+- `visionos-spatial-engineer` · visionOS Spatial Engineer · `spatial-computing` · `available-as-project-role` · phases: Research, SPEC, Execution, QA
+- `xr-cockpit-interaction-specialist` · XR Cockpit Interaction Specialist · `spatial-computing` · `available-as-project-role` · phases: Research, SPEC, Execution, QA
+- `xr-immersive-developer` · XR Immersive Developer · `spatial-computing` · `available-as-project-role` · phases: Research, SPEC, Execution, QA
+- `xr-interface-architect` · XR Interface Architect · `spatial-computing` · `available-as-project-role` · phases: Research, SPEC, Execution, QA
+- `accounts-payable-agent` · Accounts Payable Agent · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `agentic-identity-trust-architect` · Agentic Identity & Trust Architect · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `agents-orchestrator` · Agents Orchestrator · `specialized` · `reference-only` · phases: Research, PRD, SPEC, Execution, QA
+- `automation-governance-architect` · Automation Governance Architect · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `blockchain-security-auditor` · Blockchain Security Auditor · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `compliance-auditor` · Compliance Auditor · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `corporate-training-designer` · Corporate Training Designer · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `customer-service` · Customer Service · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `data-consolidation-agent` · Data Consolidation Agent · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `government-digital-presales-consultant` · Government Digital Presales Consultant · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `healthcare-customer-service` · Healthcare Customer Service · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `healthcare-marketing-compliance-specialist` · Healthcare Marketing Compliance Specialist · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `hospitality-guest-services` · Hospitality Guest Services · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `hr-onboarding` · HR Onboarding · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `identity-graph-operator` · Identity Graph Operator · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `language-translator` · Language Translator · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `legal-billing-time-tracking` · Legal Billing & Time Tracking · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `legal-client-intake` · Legal Client Intake · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `legal-document-review` · Legal Document Review · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `loan-officer-assistant` · Loan Officer Assistant · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `lsp-index-engineer` · LSP/Index Engineer · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `real-estate-buyer-seller` · Real Estate Buyer & Seller · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `recruitment-specialist` · Recruitment Specialist · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `report-distribution-agent` · Report Distribution Agent · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `retail-customer-returns` · Retail Customer Returns · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `sales-data-extraction-agent` · Sales Data Extraction Agent · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `sales-outreach` · Sales Outreach · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `chief-of-staff` · Chief of Staff · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `civil-engineer` · Civil Engineer · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `cultural-intelligence-strategist` · Cultural Intelligence Strategist · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `developer-advocate` · Developer Advocate · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `document-generator` · Document Generator · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `french-consulting-market-navigator` · French Consulting Market Navigator · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `korean-business-navigator` · Korean Business Navigator · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `mcp-builder` · MCP Builder · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `model-qa-specialist` · Model QA Specialist · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `salesforce-architect` · Salesforce Architect · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `workflow-architect` · Workflow Architect · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `study-abroad-advisor` · Study Abroad Advisor · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `supply-chain-strategist` · Supply Chain Strategist · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `zk-steward` · ZK Steward · `specialized` · `available-as-project-role` · phases: Research, PRD, SPEC, Execution, QA
+- `analytics-reporter` · Analytics Reporter · `support` · `available-as-project-role` · phases: Research, PRD, SPEC, Acceptance
+- `executive-summary-generator` · Executive Summary Generator · `support` · `available-as-project-role` · phases: Research, PRD, SPEC, Acceptance
+- `finance-tracker` · Finance Tracker · `support` · `available-as-project-role` · phases: Research, PRD, SPEC, Acceptance
+- `infrastructure-maintainer` · Infrastructure Maintainer · `support` · `available-as-project-role` · phases: Research, PRD, SPEC, Acceptance
+- `legal-compliance-checker` · Legal Compliance Checker · `support` · `available-as-project-role` · phases: Research, PRD, SPEC, Acceptance
+- `support-responder` · Support Responder · `support` · `available-as-project-role` · phases: Research, PRD, SPEC, Acceptance
+- `accessibility-auditor` · Accessibility Auditor · `testing` · `qa-role-profile` · phases: QA, Acceptance
+- `api-tester` · API Tester · `testing` · `qa-role-profile` · phases: QA, Acceptance
+- `evidence-collector` · Evidence Collector · `testing` · `qa-role-profile` · phases: QA, Acceptance
+- `performance-benchmarker` · Performance Benchmarker · `testing` · `qa-role-profile` · phases: QA, Acceptance
+- `reality-checker` · Reality Checker · `testing` · `qa-role-profile` · phases: QA, Acceptance
+- `test-results-analyzer` · Test Results Analyzer · `testing` · `qa-role-profile` · phases: QA, Acceptance
+- `tool-evaluator` · Tool Evaluator · `testing` · `qa-role-profile` · phases: QA, Acceptance
+- `workflow-optimizer` · Workflow Optimizer · `testing` · `qa-role-profile` · phases: QA, Acceptance
